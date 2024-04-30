@@ -1,6 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 import { recipes } from './theme/recipes'
 import { semanticTokens, tokens } from './theme/tokens'
+import { keyframes } from './theme/keyframes'
 
 export default defineConfig({
   // Whether to use css reset
@@ -14,7 +15,7 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: { tokens, semanticTokens, recipes },
+    extend: { tokens, semanticTokens, recipes, keyframes },
   },
   globalCss: {
     'html, body': {
